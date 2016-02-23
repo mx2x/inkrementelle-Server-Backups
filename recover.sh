@@ -1,0 +1,2 @@
+tar xzf /var/local/backup.complete.tgz --listed-incremental=/var/local/timestamp.snar
+ls /var/local/backup.[0-9][0-9][0-9][0-9][0-9][0-9].tgz | sort | xargs tar xzf --listed-incremental=/var/local/timestamp.snar
